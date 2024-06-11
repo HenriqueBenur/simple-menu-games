@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Menu with Games</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+    </style>
+    <link rel="icon" type="image/x-icon" href="assets/shock-favicon.png">
+</head>
+<body>
+    <header>
+        <img src="assets/emoji-shock.gif" alt="emoji-shock.gif">
+        <h1 class="mainTitle">BOMBA GAMES</h1>
+        <button id="theme-toggle">
+            <svg id="theme-icon" viewBox="0 0 24 24" width="24" height="24" fill="white">
+                <g clip-path="url(#a)" fill="#FFFFFF">
+                    <path d="M12 0a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V1a1 1 0 0 1 1-1ZM0 12a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1ZM21 11a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2h-2ZM13 21a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2ZM6.343 17.657a1 1 0 0 1 0 1.414L4.93 20.485a1 1 0 1 1-1.414-1.414l1.414-1.414a1 1 0 0 1 1.414 0ZM20.485 3.515a1 1 0 0 1 0 1.414l-1.414 1.414a1 1 0 1 1-1.414-1.414l1.414-1.414a1 1 0 0 1 1.414 0ZM3.515 3.515a1 1 0 0 1 1.414 0l1.414 1.414A1 1 0 1 1 4.93 6.343L3.515 4.93a1 1 0 0 1 0-1.414ZM17.657 17.657a1 1 0 0 1 1.414 0l1.414 1.414a1 1 0 1 1-1.414 1.414l-1.414-1.414a1 1 0 0 1 0-1.414ZM5 12a7 7 0 1 1 14 0 7 7 0 0 1-14 0Z"/>
+            </svg>
+        </button>
+    </header>
+    <div class="menu">
+        <div class="menu-item selected" data-game="tic-tac-toe">Tic-Tac-Toe</div>
+        <div class="menu-item" data-game="memory">Memory</div>
+        <div class="menu-item" data-game="snake">Snake</div>
+        <div class="menu-item" data-game="rock-paper-scissors">Rock, Paper, Scissors</div>
+        <div class="menu-item" data-game="whack-a-mole">Whack-a-Mole</div>
+    </div>
+    <div id="game-container"></div>
+    <script src="js/script.js"></script>
+    <script src="js/ticTacToe.js"></script>
+    <script src="js/memoryGame.js"></script>
+    <script src="js/snakeGame.js"></script>
+    <script src="js/cheatButton.js"></script>
+</body>
+</html>

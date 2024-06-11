@@ -1,0 +1,51 @@
+:root {
+    --snake-color: #0f380f; /* Darkest green */
+    --food-color: #306230;  /* Medium dark green */
+    --board-background: #8bac0f; /* Medium light green */
+    --board-border: #9bbc0f; /* Lightest green */
+    --score-color: #0f380f; /* Darkest green */
+}
+
+#snake-game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#snake-game-board {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: var(--board-background);
+    border: 2px solid var(--board-border);
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+}
+
+.snake {
+    background-color: var(--snake-color);
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--board-border);
+}
+
+.food {
+    background-color: var(--food-color);
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--board-border);
+}
+
+#snake-game-score {
+    margin-top: 20px;
+    font-size: 24px;
+    color: var(--score-color);
+}
+
+.grid-cell {
+    border: 1px solid var(--board-border);
+    box-sizing: border-box;
+}
